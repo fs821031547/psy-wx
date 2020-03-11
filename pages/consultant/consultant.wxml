@@ -1,0 +1,217 @@
+<wxs module="m1">
+    function in_array(a,b){ if(a.length
+    < 1) { return false; } for (var i=0 ; i < a.length; ++i) { if(a[i]==b ){ return true; } } return false; } module.exports.in_array=in_array; </wxs>
+        <view class='top'>
+            <view class='view-search'>
+                <view class='view-search1'>
+                    <input type='text' class='view-theinput' value="{{name}}" placeholder='输入咨询师的姓名' bindinput='nameInput' placeholder-style='font-size:28rpx;color:rgb(192,192,192);'></input>
+                    <image src='../res/search.png' class='view-shousuo' bindtap='confirm'></image>
+                </view>
+            </view>
+            <view class='view-top'>
+                <swiper class='view-swiper' indicator-dots="{{true}}" indicator-color="rgba(0, 0, 0, .1)" indicator-active-color='rgba(0, 0, 0, .3)'>
+                    <block wx:for='{{picture}}' wx:key='{{item}}'>
+                        <swiper-item class="view-swiper-itm">
+                            <image src="{{item.image}}" class="slide-image" />
+                        </swiper-item>
+                    </block>
+                </swiper>
+            </view>
+            <block wx:if='{{cityid!=0}}'>
+                <view class='tableView2' catchtap='inputSata1'>
+                    <view class='tableView_view2'>
+                        <view class='tableView_view3' data-id="1" catchtap='tableCheck'>地区
+                            <block wx:if="{{oType===1}}">
+                                <image src='../res/005.png' class='view-imgs'></image>
+                            </block>
+                            <block wx:else>
+                                <image src='../res/006.png' class='view-imgs'></image>
+                            </block>
+                        </view>
+                        <view class='tableView_view3' data-id="2" catchtap='tableCheck'>价格
+                            <block wx:if="{{oType===2}}">
+                                <image src='../res/005.png' class='view-imgs'></image>
+                            </block>
+                            <block wx:else>
+                                <image src='../res/006.png' class='view-imgs'></image>
+                            </block>
+                        </view>
+                        <view class='tableView_view3' data-id="3" catchtap='tableCheck'>领域
+                            <block wx:if="{{oType===3}}">
+                                <image src='../res/005.png' class='view-imgs'></image>
+                            </block>
+                            <block wx:else>
+                                <image src='../res/006.png' class='view-imgs'></image>
+                            </block>
+                        </view>
+                        <view class='tableView_view3' data-id="4" catchtap='tableCheck'>其他
+                            <block wx:if="{{oType===4}}">
+                                <image src='../res/005.png' class='view-imgs'></image>
+                            </block>
+                            <block wx:else>
+                                <image src='../res/006.png' class='view-imgs'></image>
+                            </block>
+                        </view>
+                    </view>
+                </view>
+
+                <view class='view-region'>
+                    <view class='view-bu' catchtouchmove="doNotMove" catchtap='city'>
+                    </view>
+                    <block wx:if='{{cityid==1}}'>
+                        <view class='view-city'>
+                            <scroll-view scroll-y class='view-city1'>
+                                <view class='view-cn' wx:for="{{provincelist}}" bindtap='provincetap' wx:key="key" data-id='{{item.area_id}}' style="{{province == item.area_id?'color:rgb(127, 216, 254)':''}}">{{item.area_name}}</view>
+                            </scroll-view>
+                            <scroll-view scroll-y class='view-city2'>
+                                <view class='view-cn1' wx:for="{{arealist}}" bindtap='citytap' wx:key="key" data-id='{{item.area_id}}' data-name='{{item.area_name}}' style="{{areaid ==item.area_id?'color:rgb(127, 216, 254)':''}}">{{item.area_name}}</view>
+                            </scroll-view>
+                        </view>
+                    </block>
+                    <block wx:if='{{cityid==2}}'>
+                        <view class='view-price1'>
+                            <scroll-view scroll-y class='view-scroll-view'>
+                                <view class='view-price5'>
+                                    <view class='view-price4'>咨询价格</view>
+                                    <view class='view-price2'>
+                                        <view class='view-price3' style="{{priceid==0?'background-color:rgb(127, 216, 254); color:rgb(255, 255, 255);':''}}" bindtap='pricetap' data-id='0' data-startprice='0' data-endprice='0' data-name='价格'>价格不限</view>
+                                        <view class='view-price3' style="{{priceid==1?'background-color:rgb(127, 216, 254); color:rgb(255, 255, 255);':''}}" bindtap='pricetap' data-id='1' data-startprice='0' data-endprice='300' data-name=' 0-300'> 0-300</view>
+                                        <view class='view-price3' style="{{priceid==2?'background-color:rgb(127, 216, 254); color:rgb(255, 255, 255);':''}}" bindtap='pricetap' data-id='2' data-startprice='301' data-endprice='500' data-name='301-500'>301-500</view>
+                                        <view class='view-price3' style="{{priceid==3?'background-color:rgb(127, 216, 254); color:rgb(255, 255, 255);':''}}" bindtap='pricetap' data-id='3' data-startprice='501' data-endprice='700' data-name='501-700'>501-700</view>
+                                        <view class='view-price3' style="{{priceid==4?'background-color:rgb(127, 216, 254); color:rgb(255, 255, 255);':''}}" bindtap='pricetap' data-id='4' data-startprice='700' data-endprice='100000' data-name='700以上'>700以上</view>
+                                    </view>
+                                </view>
+                            </scroll-view>
+                        </view>
+                    </block>
+                    <block wx:if='{{cityid==3}}'>
+                        <view class='view-field'>
+                            <scroll-view scroll-y class='view-scroll-view'>
+                                <view class='view-field1'>
+                                    <view class='view-field2'>擅长类型</view>
+                                    <checkbox-group bindchange="tags_idsChange">
+                                        <view class='view-field3'>
+                                            <view class='view-field4' wx:for='{{tagsList}}' wx:key='key'>
+                                                <block wx:if='{{m1.in_array(tagsArr,index)}}'>
+                                                    <label class="checkbox"> <checkbox value='{{index}}' checked/>{{item}}</label>
+                                                </block>
+                                                <block wx:else>
+                                                    <label class="checkbox"> <checkbox value='{{index}}' />{{item}}</label>
+                                                </block>
+                                            </view>
+                                        </view>
+                                    </checkbox-group>
+                                </view>
+                            </scroll-view>
+                        </view>
+                    </block>
+                    <block wx:if='{{cityid==4}}'>
+                        <view class='view-other'>
+                            <scroll-view scroll-y class='view-scroll-view'>
+                                <view class='view-other1'>
+                                    <view class='view-other2'>咨询类型</view>
+                                    <checkbox-group bindchange="funcChange">
+                                        <view class='view-field3'>
+                                            <view class='view-field4' wx:for='{{func}}' wx:key='key'>
+                                                <block wx:if='{{m1.in_array(funcArr,index)}}'>
+                                                    <label class="checkbox"> <checkbox value='{{index}}' checked/>{{item}}</label>
+                                                </block>
+                                                <block wx:else>
+                                                    <label class="checkbox"> <checkbox value='{{index}}' />{{item}}</label>
+                                                </block>
+
+                                            </view>
+
+                                        </view>
+                                    </checkbox-group>
+                                </view>
+                                <!-- <view class='view-gender'>
+                            <view class='view-gender1'>性与性别</view>
+                            <view class='view-gender2'>
+                                <view class='view-gender3'>性心理</view>
+                                <view class='view-gender3'>性别认同</view>
+                            </view>
+                        </view> -->
+                            </scroll-view>
+                        </view>
+                    </block>
+                    <view class='view-all'>
+                        <view class='view-reset' catchtap='allcancel'>全部重置</view>
+                        <view class='view-confirm' catchtap='confirm'>确认</view>
+                    </view>
+                </view>
+            </block>
+            <block wx:else>
+                <view class='tableView' catchtap='inputSata1'>
+                    <view class='tableView_view'>
+                        <view class='tableView_view1' data-id="1" catchtap='tableCheck'>{{areaname}}
+                            <block wx:if="{{oType===1}}">
+                                <image src='../res/005.png' class='view-imgs'></image>
+                            </block>
+                            <block wx:else>
+                                <image src='../res/006.png' class='view-imgs'></image>
+                            </block>
+                        </view>
+                        <view class='tableView_view1' data-id="2" catchtap='tableCheck'>{{pricename}}
+                            <block wx:if="{{oType===2}}">
+                                <image src='../res/005.png' class='view-imgs'></image>
+                            </block>
+                            <block wx:else>
+                                <image src='../res/006.png' class='view-imgs'></image>
+                            </block>
+                        </view>
+                        <view class='tableView_view1' data-id="3" catchtap='tableCheck'>领域
+                            <block wx:if="{{oType===3}}">
+                                <image src='../res/005.png' class='view-imgs'></image>
+                            </block>
+                            <block wx:else>
+                                <image src='../res/006.png' class='view-imgs'></image>
+                            </block>
+                        </view>
+                        <view class='tableView_view1' data-id="4" catchtap='tableCheck'>其他
+                            <block wx:if="{{oType===4}}">
+                                <image src='../res/005.png' class='view-imgs'></image>
+                            </block>
+                            <block wx:else>
+                                <image src='../res/006.png' class='view-imgs'></image>
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </block>
+            <view wx:if="{{consultantList[0]}}">
+                <view class='view-towa'>
+                    <view class='towa' wx:for='{{consultantList}}' wx:key='{{item}}' data-id="{{item.id}}" bindtap='consultant'>
+                        <image src='{{item.avatar}}' class='view-imgs1' mode='aspectFill'></image>
+                        <view class='view-quannei'>
+                            <view class='view-name-qian'>
+                                <view class='view-name'>{{item.name}}</view>
+                                <view class='view-qian'>
+                                    <view class='view-qian1'>{{item.price}}</view>
+                                    <view class='view-qian2'>元/次</view>
+                                </view>
+                            </view>
+                            <view class='view-goujia'>{{item.qualification}}</view>
+                            <view class='view-neiron'>{{item.intro}}</view>
+                            <view class='view-dianzan'>
+                                <view class='view-dizi'>
+                                    <image src='../res/dt.png' class='view-imgdt'></image>
+                                    <view class='view-dt'>{{item.city}}</view>
+                                </view>
+                                <view class='view-shipin'>
+                                    <image src='../res/shipng.png' class='view-shipin1'></image>
+                                    <view class='view-shiping'>{{item.type_txt}}</view>
+                                </view>
+                                <view class='view-dianz'>
+                                    <image src='../res/aix.png' class='view-dianz1'></image>
+                                    <view class='view-renshu'>{{item.follow}}</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view wx:if="{{consultantList.length == 0}}">
+                <view class='no-data-tip'>暂无数据</view>
+            </view>
+        </view>
