@@ -1,10 +1,5 @@
-// var NewApiRootUrl = 'https://shop.51shop.ink/demo/api/'
 
-// var NewApiRootUrl = 'http://dev.51shop.ink/multiuser/api/';
 var NewApiRootUrl = 'https://gstsc.91ygxc.com/api/';
-//  var NewApiRootUrl = 'http://192.168.1.158:8050/platform_framework_war/api/';
-// var NewApiRootUrl = 'http://dev.51shop.ink/demo/api/'
-// var NewApiRootUrl = 'https://fx.51shop.ink/drsshop/api/'
 module.exports = {
   moduleStatus: NewApiRootUrl + 'config/moduleStatus', //配置模块显示隐藏
   IndexUrlNewGoods: NewApiRootUrl + 'index/newGoods', //首页新品首发数据接口
