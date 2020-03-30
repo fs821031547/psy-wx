@@ -1,5 +1,8 @@
+// var NewApiRootUrl = 'http://dev.51shop.ink/multiuser/api/';
+// var NewApiRootUrl = 'https://gstsc.91ygxc.com/api/';
+var NewApiRootUrl = 'http://192.168.3.30:8081/';
+var backUrl = 'http://192.168.3.30/';
 
-var NewApiRootUrl = 'https://gstsc.91ygxc.com/api/';
 module.exports = {
   moduleStatus: NewApiRootUrl + 'config/moduleStatus', //配置模块显示隐藏
   IndexUrlNewGoods: NewApiRootUrl + 'index/newGoods', //首页新品首发数据接口
@@ -13,7 +16,7 @@ module.exports = {
   CatalogList: NewApiRootUrl + 'catalog/index', //分类目录全部分类数据接口
   CatalogCurrent: NewApiRootUrl + 'catalog/current', //分类目录当前分类数据接口
 
-  AuthLoginByWeixin: NewApiRootUrl + 'auth/login_by_weixin', //微信登录
+  AuthLoginByWeixin: NewApiRootUrl + 'api/psy/auth/login_by_weixin', //微信登录
 
   GoodsCount: NewApiRootUrl + 'goods/count', //统计商品总数
   GoodsList: NewApiRootUrl + 'goods/list', //获得商品列表
@@ -76,7 +79,7 @@ module.exports = {
   SmsCode: NewApiRootUrl + 'sendRegisterCode', //发送短信
   BindMobile: NewApiRootUrl + 'inviteReg', //fx注册
   Login: NewApiRootUrl + 'auth/login', //账号登录
-  Register: NewApiRootUrl + 'auth/register', //注册
+  Register: backUrl + '/api/ConsultantInfo/add', //注册
   CouponList: NewApiRootUrl + 'coupon/list', // 优惠券列表
   GoodsCouponList: NewApiRootUrl + 'coupon/listByGoods', // 商品优惠券列表   
   OrderQuery: NewApiRootUrl + 'pay/query',

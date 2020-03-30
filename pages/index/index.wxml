@@ -1,13 +1,84 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="page-padding">
+  <swiper autoplay="{{true}}" class="topSwiper" interval="{{3000}}" duration="500" indicator-active-color="#e62424">
+      <swiper-item>
+        <view class="swiper-item" style="background:#d00;height:200px;">
+          <!-- <image src="" class='imgw' ontap="clickActivity"/> -->
+        </view>
+      </swiper-item>
+  </swiper>
+  <view class="search-input-box">
+    <view class="search-input">
+      <view class="search-input-span">
+      </view>
+      <view class="search-btn"></view>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="user-menu">
+    <view class="item no-border">
+        <navigator url="url" class="a">
+          <text class="icon fyq"></text>
+          <text class="txt">恋爱咨询</text>
+        </navigator>
+      </view>
+      <view class="item no-border">
+        <navigator url="url" class="a">
+          <text class="icon fyq"></text>
+          <text class="txt">情绪压力</text>
+        </navigator>
+      </view>
+      <view class="item no-border">
+        <navigator url="url" class="a">
+          <text class="icon fyq"></text>
+          <text class="txt">亲子教育</text>
+        </navigator>
+      </view>
+      <view class="item no-border">
+        <navigator url="url" class="a">
+          <text class="icon fyq"></text>
+          <text class="txt">婚姻咨询</text>
+        </navigator>
+      </view>
+  </view>
+  <view class="integral-platform">
+    <view class="integral-platform-title">平台通知</view>
+    <view class="integral-platform-content">海量商家优惠券等你去领！</view>
+  </view>
+  <view class="public-title">
+          <view class="clear">
+            <view class="right li-nth li-nth-1" bindtap="goAbout">
+              更多
+              <image class="button icon-right ion-ios-arrow-right detailBtn" src="/static/images/go.png"></image>
+            </view>
+            <view class="li-nth li-nth-2">
+              金牌咨询
+            </view>
+          </view>
+        </view>
+  <view class='coachPerInfoList' bindtap="goDetail">
+          <view class="coachPerInfo">
+            <view class="avatar">
+              <image src="http://img.91ygxc.com/filestore1/M00/45/4C/rBLZzV5l-d-Ad-x6AAJXpm7ZNwY264.png" class='userImg'></image>
+            </view>
+            <view class="conmal">
+              <view class="titlea">
+                <text class="coachName">徐勇</text>
+                <text class="fontSzie-24  driverSchool">一级咨询主题</text>
+              </view>
+              <view class="titleb">
+                <text class="coachAge detailInfoCon">年教龄</text>
+                <text class="carType detailInfoCon">班</text>
+                <text class="distants detailInfoCon">距离1km</text>
+              </view>
+              <view class="titlec">
+                <image src="/image/pos.jpg" class="imgd"></image>
+                <text class="textd"></text>
+              </view>
+              <view class="tool">
+                <button size="mini" class="findCoachLearnCar" catchtap="findCoachLearnCar">找ta学车</button>
+              </view>
+            </view>
+            <view class="private-contact">私聊</view>
+          </view>
   </view>
 </view>
