@@ -1,2 +1,64 @@
 <!--pages/consultantDetail/consultantDetail.wxml-->
-<text>pages/consultantDetail/consultantDetail.wxml</text>
+<view class="detail-head-box">
+  <view class="topic-view-first-mode ng-star-inserted">
+        <view class="first-mode-head">
+          <view class="user-head-img"><image alt="" src="//cdn.jisuapp.cn/static/jisuapp_editor/images/topic-user.png"/></view>
+          <view class="user-head-right">
+            <view class="user-header-font">用户头像</view>
+          </view>
+        </view>
+        <view>
+          <view class="topic-height-line">2977</view>
+          <view class="topic-height-name">咨询</view>
+          <view class="topic-image-box">
+            <image class="topic-image" src="../../static/images/star_active.png"></image>
+            <image class="topic-image" src="../../static/images/star_active.png"></image>
+            <image class="topic-image" src="../../static/images/star_active.png"></image>
+            <image class="topic-image" src="../../static/images/star_active.png"></image>
+            <image class="topic-image" src="../../static/images/star.png"></image>
+            <view class="topic-height-line">4.5</view>
+          </view>
+        </view>
+        <view class="topic-height-con">二级心理咨询师</view>
+        <view class="topic-tag-box">
+          <view class="topic-tag">
+            #婚姻家庭
+          </view>
+          <view class="topic-tag">
+            #人际关系
+          </view>
+          <view class="topic-tag">
+            #职场心理
+          </view>
+        </view>
+      </view>
+      <view class="detail-handle-box">
+        <image class="detail-handle-img" src="../../static/images/detail_more.png"></image>
+        <view class="detail-handle-title">详细资料</view>
+      </view>
+      <view class="common-first-title">
+        个人介绍
+      </view>
+      <view class="common-desc">
+        巨大是哦规划局爱很简单萨比恢复单据被害人基多拉哈哈个凤凰国际发哈国际法联合国房间爱好大家啊北京按类别换肤大师估计会根据开大会金卡班挂号费大并根据登记卡VB东方嘉盛了比较多考虑把连接板附近啊不符合代理商备份是辅导班回复大喇叭方接口读书报告会飞的包是的风水宝地付款吧防盗设。
+      </view>
+      <view class="common-first-title">
+        专业资质
+      </view>
+      <view class="second-grade-box">
+        <view class="second-title">从业资质</view>
+        <view class="second-desc">国家二级咨询师</view>
+      </view>
+      <view class="second-grade-box">
+        <view class="second-title">擅长领域</view>
+        <view class="second-tag-box">
+          <view class="second-tag-title">婚姻家庭</view>
+          <view class="second-tag-content">
+            <view class="second-tag-item">#单亲家庭</view>
+            <view class="second-tag-item">#单亲家庭</view>
+            <view class="second-tag-item">#单亲家庭</view>
+            <view class="second-tag-item">#单亲家庭</view>
+          </view>
+        </view>
+      </view>
+</view>

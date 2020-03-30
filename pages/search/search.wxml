@@ -1,0 +1,42 @@
+<!--pages/search/search.wxml-->
+<view class="header-box bottom-border">
+  <view class="search-box">
+    <image class="search-icon" src="/image/search_icon.png" />
+    <input class="search-input" type="text" placeholder="搜索教练/驾校" placeholder-class="input-placeholder" bindconfirm="onEnterPress" focus="true" auto-focus="true" bindinput="inputText" />
+  </view>
+  <view class="search-confirm confirm-active" catch:tap="onEnterPress">搜索</view>
+</view>
+<view class="search-history-box">
+  <view class="search-history">
+    历史搜索
+  </view>
+  <view class="delete-btn">
+    <image src="../../static/images/del-address.png" class="delete-btn-image"></image>
+  </view>
+
+</view>
+  <view class="search-tag-list">
+    <view class="search-tag">
+    多福多寿
+    </view>
+    <view class="search-tag">
+    多福多寿
+    </view>
+  </view>
+  <view class="search-history-box">
+  <view class="search-history">
+    热门搜索
+  </view>
+  <view class="delete-btn">
+    <image src="../../static/images/del-address.png" class="delete-btn-image"></image>
+  </view>
+
+</view>
+  <view class="search-tag-list">
+    <view class="search-tag">
+    多福多寿
+    </view>
+    <view class="search-tag">
+    多福多寿
+    </view>
+  </view>

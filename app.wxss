@@ -8,6 +8,17 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.common-first-title{
+  font-size: 15px;
+  color: #333;
+  padding: 10px 0;
+  font-weight: 600;
+}
+.common-desc{
+  line-height: 18px;
+  font-size: 12px;
+  color: #666;
+}
 /**
 列表
 */
@@ -71,7 +82,7 @@
 }
 
 .driverSchool {
-  color: #b5b7b7;
+  color: #999;
   font-size:24rpx;
   background-color: #f4f7f7;
   vertical-align: middle;
@@ -80,28 +91,29 @@
   border-radius:6rpx;
 }
 
-.tool button {
-  padding: 0; 
-  height: 64rpx;
-  line-height:59rpx;
-  width:190rpx;
-  font-size: 30rpx;
+.tool .findCoachLearnCar {
+  padding: 0 4px; 
+  height: 54rpx;
+  line-height:54rpx;
+  font-size: 12px;
+  
   margin: 0 20rpx 0 0;
-  border-radius: 50rpx;
+  border-radius: 10rpx;
+  font-weight: 500;
 }
 
-.tool button:nth-of-type(1) {
+.tool .findCoachLearnCar:nth-of-type(1) {
   background: #fff;
-  color: #c8161d;
-  border: 1rpx solid #c8161d
+  color: #999;
+  border: 1rpx solid #ddd
 }
 
-.tool button:nth-of-type(2) {
+.tool .findCoachLearnCar:nth-of-type(2) {
   background:#c8161d;
   color: #fff
 }
 
-.tool button::after {
+.tool .findCoachLearnCar::after {
   border: none;
 }
 .detailInfo .detailInfoTitle {

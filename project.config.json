@@ -41,6 +41,10 @@
 			"currentL": -1,
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 0,
 			"list": [
@@ -48,6 +52,20 @@
 					"id": -1,
 					"name": "pages/reg",
 					"pathName": "pages/reg/reg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/consultantDetail/consultantDetail",
+					"pathName": "pages/consultantDetail/consultantDetail",
 					"scene": null
 				}
 			]

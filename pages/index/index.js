@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+const util = require('../../utils/util.js')
 Page({
   data: {
     motto: 'Hello World',
@@ -45,6 +45,7 @@ Page({
       })
     }
   },
+
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
@@ -55,6 +56,9 @@ Page({
     })
   },
   goDetail: function(){
-    
-  }
+    util.go('consultantDetail')
+  },
+  goSearch: function () {
+    util.go('search');
+  },
 })

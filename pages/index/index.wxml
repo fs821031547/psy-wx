@@ -8,7 +8,7 @@
       </swiper-item>
   </swiper>
   <view class="search-input-box">
-    <view class="search-input">
+    <view class="search-input" bindtap="goSearch">
       <view class="search-input-span">
       </view>
       <view class="search-btn"></view>
@@ -75,7 +75,7 @@
                 <text class="textd"></text>
               </view>
               <view class="tool">
-                <button size="mini" class="findCoachLearnCar" catchtap="findCoachLearnCar">找ta学车</button>
+                <view size="mini" class="findCoachLearnCar" catchtap="findCoachLearnCar">恋爱婚姻</view>
               </view>
             </view>
             <view class="private-contact">私聊</view>

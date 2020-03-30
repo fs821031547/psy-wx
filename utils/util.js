@@ -185,7 +185,18 @@ function accSub(arg1, arg2) {
   return ((arg1 * m - arg2 * m) / m).toFixed(n);
 }
 
+const go = (page, param) => {
+  var url = '/pages/' + page + '/' + page;
+  if (param) {
+    url = url + param;
+  }
+  wx.navigateTo({
+    url: url,
+  });
+}
+
 module.exports = {
+  go,
   formatTime,
   nformatTime,
   request,
