@@ -5,7 +5,9 @@
     "pages/catalog/catalog",
     "pages/consultant/consultant",
     "pages/cart/cart",
-    "pages/ucenter/index/index"
+    "pages/reg/reg",
+    "pages/ucenter/index/index",
+    "pages/consultantDetail/consultantDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

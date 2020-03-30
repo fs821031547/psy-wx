@@ -30,11 +30,15 @@ function loginByWeixin(userInfo) {
       params.province = userInfo.userInfo.province;
       params.promoterId = wx.getStorageSync('userId') || 0;
       params.merchantId = wx.getStorageSync('merchantId') || 0;
+      console.log('code:',code);
+      userInfo.userInfo.code = code;
+      wx.setStorageSync('userInfo', userInfo.userInfo);
+      console.log('userinfo:',userInfo);
       console.log('-----********---------', JSON.stringify(params))
       util.request(api.AuthLoginByWeixin, params, 'POST').then(res => {
         if (res.errno === 0) { 
           //存储用户信息
-          wx.setStorageSync('userInfo', userInfo);
+          // wx.setStorageSync('userInfo', userInfo.userInfo);
           wx.setStorageSync('token', res.data.userVo.weixin_openid);
           wx.setStorageSync('isReal', res.data.userVo.isReal); 
           wx.setStorageSync('uId', res.data.userVo.userId); 
@@ -45,6 +49,8 @@ function loginByWeixin(userInfo) {
           }  
           resolve(res);
         } else {
+          var openid = res.errmsg.split(',')[1];
+          wx.setStorageSync('opeid', openid)
           util.showErrorToast(res.errmsg)
           reject(res); 
         }

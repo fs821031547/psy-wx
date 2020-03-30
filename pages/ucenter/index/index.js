@@ -126,6 +126,12 @@ Page({
                 });
                 app.globalData.userInfo = userInfo.userInfo;
                 app.globalData.token = res.data.openid;
+                if (res.errno === 1) {
+                  wx.navigateTo({
+                    url: '../../reg/reg'
+                  })
+                  return;
+                }
                 this.initDataInfo()
                 this.initYJInfo()
             }).catch((err) => {

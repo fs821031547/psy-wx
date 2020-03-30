@@ -214,4 +214,30 @@
             <view wx:if="{{consultantList.length == 0}}">
                 <view class='no-data-tip'>暂无数据</view>
             </view>
+              <view class='coachPerInfoList' bindtap="goDetail">
+          <view class="coachPerInfo">
+            <view class="avatar">
+              <image src="http://img.91ygxc.com/filestore1/M00/45/4C/rBLZzV5l-d-Ad-x6AAJXpm7ZNwY264.png" class='userImg'></image>
+            </view>
+            <view class="conmal">
+              <view class="titlea">
+                <text class="coachName">徐勇</text>
+                <text class="fontSzie-24  driverSchool">一级咨询主题</text>
+              </view>
+              <view class="titleb">
+                <text class="coachAge detailInfoCon">年教龄</text>
+                <text class="carType detailInfoCon">班</text>
+                <text class="distants detailInfoCon">距离1km</text>
+              </view>
+              <view class="titlec">
+                <image src="/image/pos.jpg" class="imgd"></image>
+                <text class="textd"></text>
+              </view>
+              <view class="tool">
+                <button size="mini" class="findCoachLearnCar" catchtap="findCoachLearnCar">找ta学车</button>
+              </view>
+            </view>
+            <view class="private-contact">私聊</view>
+          </view>
+  </view>
         </view>

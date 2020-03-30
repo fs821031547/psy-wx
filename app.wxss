@@ -8,3 +8,119 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+/**
+列表
+*/
+
+.coachPerInfoList {
+  padding:0rpx 0rpx 40rpx 0rpx;
+  margin-bottom: 40rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #eee;
+  position:relative;
+}
+
+.coachPerInfo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* padding-bottom: 30rpx; */
+  position: relative;
+}
+.coachPerInfo .userImg{
+  width: 210rpx;
+  height: 280rpx;
+  border-radius: inherit ;
+  margin-right: 30rpx;
+  }
+
+.coachPerInfo  .avatar {
+  flex: 1;
+  border-radius: 8rpx;
+}
+
+.coachPerInfo  .info {
+  padding-top: 0rpx;
+  flex: 2;
+}
+.coachPerInfo  .conmal {
+  flex: 2;
+  position: relative;
+}
+.coachPerInfo  .conmal .titlea{margin-bottom:5rpx;}
+.coachPerInfo  .conmal .titleb{color: #666;margin-bottom:14rpx;}
+.coachPerInfo  .conmal .titleb .coachAge {display: inline-block;vertical-align: middle; margin-right: 25rpx;}
+.coachPerInfo  .conmal .titleb .carType{display: inline-block;vertical-align: middle;margin-right: 25rpx;}
+.coachPerInfo  .conmal .titleb .distants {display: inline-block;vertical-align: middle;}
+.coachPerInfo  .conmal .titlec{color: #999;overflow: hidden;}
+.coachPerInfo  .conmal .titlec .imgd{display:block;width:25rpx;height:31rpx;float: left;padding-top: 3rpx;}
+.coachPerInfo  .conmal .titlec .textd{display:block;padding-left:35rpx;font-size:26rpx;}
+.coachPerInfo  .tool {
+  font-size: 26rpx;
+  position: absolute;
+  left: 0;
+  bottom:0;
+}
+
+.coachName {
+  font-weight: 700;
+  font-size: 36rpx;
+  margin-right: 25rpx;
+  vertical-align: middle;
+  display:inline-block;
+}
+
+.driverSchool {
+  color: #b5b7b7;
+  font-size:24rpx;
+  background-color: #f4f7f7;
+  vertical-align: middle;
+  display:inline-block;
+  padding:2rpx 10rpx;
+  border-radius:6rpx;
+}
+
+.tool button {
+  padding: 0; 
+  height: 64rpx;
+  line-height:59rpx;
+  width:190rpx;
+  font-size: 30rpx;
+  margin: 0 20rpx 0 0;
+  border-radius: 50rpx;
+}
+
+.tool button:nth-of-type(1) {
+  background: #fff;
+  color: #c8161d;
+  border: 1rpx solid #c8161d
+}
+
+.tool button:nth-of-type(2) {
+  background:#c8161d;
+  color: #fff
+}
+
+.tool button::after {
+  border: none;
+}
+.detailInfo .detailInfoTitle {
+  color: #999;
+}
+
+.detailInfoCon {
+color: #666;
+  font-size:30rpx;
+
+}
+.private-contact{
+   position: absolute;
+    right: 10px;
+    bottom: 6px;
+    color: #d00;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #c8161d;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
