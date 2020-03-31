@@ -1,4 +1,5 @@
 /**app.wxss**/
+
 .container {
   height: 100%;
   display: flex;
@@ -7,28 +8,31 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
-.common-first-title{
+}
+
+.common-first-title {
   font-size: 15px;
   color: #333;
   padding: 10px 0;
   font-weight: 600;
 }
-.common-desc{
+
+.common-desc {
   line-height: 18px;
   font-size: 12px;
   color: #666;
 }
+
 /**
 列表
 */
 
 .coachPerInfoList {
-  padding:0rpx 0rpx 40rpx 0rpx;
+  padding: 0rpx 0rpx 40rpx 0rpx;
   margin-bottom: 40rpx;
   background-color: #fff;
   border-bottom: 1rpx solid #eee;
-  position:relative;
+  position: relative;
 }
 
 .coachPerInfo {
@@ -38,12 +42,13 @@
   /* padding-bottom: 30rpx; */
   position: relative;
 }
-.coachPerInfo .userImg{
+
+.coachPerInfo .userImg {
   width: 210rpx;
   height: 280rpx;
-  border-radius: inherit ;
+  border-radius: inherit;
   margin-right: 30rpx;
-  }
+}
 
 .coachPerInfo  .avatar {
   flex: 1;
@@ -54,23 +59,62 @@
   padding-top: 0rpx;
   flex: 2;
 }
+
 .coachPerInfo  .conmal {
   flex: 2;
   position: relative;
 }
-.coachPerInfo  .conmal .titlea{margin-bottom:5rpx;}
-.coachPerInfo  .conmal .titleb{color: #666;margin-bottom:14rpx;}
-.coachPerInfo  .conmal .titleb .coachAge {display: inline-block;vertical-align: middle; margin-right: 25rpx;}
-.coachPerInfo  .conmal .titleb .carType{display: inline-block;vertical-align: middle;margin-right: 25rpx;}
-.coachPerInfo  .conmal .titleb .distants {display: inline-block;vertical-align: middle;}
-.coachPerInfo  .conmal .titlec{color: #999;overflow: hidden;}
-.coachPerInfo  .conmal .titlec .imgd{display:block;width:25rpx;height:31rpx;float: left;padding-top: 3rpx;}
-.coachPerInfo  .conmal .titlec .textd{display:block;padding-left:35rpx;font-size:26rpx;}
+
+.coachPerInfo  .conmal .titlea {
+  margin-bottom: 5rpx;
+}
+
+.coachPerInfo  .conmal .titleb {
+  color: #666;
+  margin-bottom: 14rpx;
+}
+
+.coachPerInfo  .conmal .titleb .coachAge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 25rpx;
+}
+
+.coachPerInfo  .conmal .titleb .carType {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 25rpx;
+}
+
+.coachPerInfo  .conmal .titleb .distants {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.coachPerInfo  .conmal .titlec {
+  color: #999;
+  overflow: hidden;
+}
+
+.coachPerInfo  .conmal .titlec .imgd {
+  display: block;
+  width: 25rpx;
+  height: 31rpx;
+  float: left;
+  padding-top: 3rpx;
+}
+
+.coachPerInfo  .conmal .titlec .textd {
+  display: block;
+  padding-left: 35rpx;
+  font-size: 26rpx;
+}
+
 .coachPerInfo  .tool {
   font-size: 26rpx;
   position: absolute;
   left: 0;
-  bottom:0;
+  bottom: 0;
 }
 
 .coachName {
@@ -78,25 +122,24 @@
   font-size: 36rpx;
   margin-right: 25rpx;
   vertical-align: middle;
-  display:inline-block;
+  display: inline-block;
 }
 
 .driverSchool {
   color: #999;
-  font-size:24rpx;
+  font-size: 24rpx;
   background-color: #f4f7f7;
   vertical-align: middle;
-  display:inline-block;
-  padding:2rpx 10rpx;
-  border-radius:6rpx;
+  display: inline-block;
+  padding: 2rpx 10rpx;
+  border-radius: 6rpx;
 }
 
 .tool .findCoachLearnCar {
-  padding: 0 4px; 
+  padding: 0 4px;
   height: 54rpx;
-  line-height:54rpx;
+  line-height: 54rpx;
   font-size: 12px;
-  
   margin: 0 20rpx 0 0;
   border-radius: 10rpx;
   font-weight: 500;
@@ -105,34 +148,83 @@
 .tool .findCoachLearnCar:nth-of-type(1) {
   background: #fff;
   color: #999;
-  border: 1rpx solid #ddd
+  border: 1rpx solid #ddd;
 }
 
 .tool .findCoachLearnCar:nth-of-type(2) {
-  background:#c8161d;
-  color: #fff
+  background: #c8161d;
+  color: #fff;
 }
 
 .tool .findCoachLearnCar::after {
   border: none;
 }
+
 .detailInfo .detailInfoTitle {
   color: #999;
 }
 
 .detailInfoCon {
-color: #666;
-  font-size:30rpx;
-
+  color: #666;
+  font-size: 30rpx;
 }
-.private-contact{
-   position: absolute;
-    right: 10px;
-    bottom: 6px;
-    color: #d00;
-    font-size: 14px;
-    font-weight: 500;
-    border: 1px solid #c8161d;
-    padding: 2px 4px;
-    border-radius: 3px;
+
+.private-contact {
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
+  color: #d00;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #c8161d;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/**标题*/
+
+.public-title {
+  padding: 10px 0;
+}
+
+.public-title .li-nth-1 span, .public-title .li-nth .icon.icon-shaixuan {
+  vertical-align: middle;
+}
+
+.public-title .li-nth-1 {
+  font-size: 13px;
+  color: #999;
+  float: right;
+  line-height: 24px;
+}
+
+.public-title .li-nth .detailBtn {
+  min-height: 10px;
+  height: 10px;
+  line-height: 10px;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  color: #666;
+  width: 8px;
+  display: inline-block;
+}
+
+.public-title .li-nth .button.button-clear {
+  color: #666;
+}
+
+.public-title .li-nth .button:before {
+  font-size: 16px;
+  color: #666;
+  min-height: 20px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  margin-left: 2px;
+}
+
+.public-title .li-nth-2 {
+  font-size: 18px;
+  font-weight: 600;
 }

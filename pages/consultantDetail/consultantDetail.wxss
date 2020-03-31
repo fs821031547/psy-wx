@@ -1,6 +1,7 @@
 /* pages/consultantDetail/consultantDetail.wxss */
 .detail-head-box{
   padding:10px;
+  padding-bottom: 80px;
 }
 .first-mode-head {
     display: flex;
@@ -114,3 +115,138 @@ border-radius: 4px;
   color: #666;
   line-height: 20px;
   }
+  .second-tag2-content{
+   display: flex; 
+   display: -webkit-flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+  }
+  .second-tag2-item{
+    padding: 0 5px;
+    height: 24px;
+    line-height: 24px;
+    background: #f2f2f2;
+    color: #333;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  .three-desc-box{
+    padding: 10px;
+    background: #f2f2f2;
+  }
+  .three-desc{
+    color: #333;
+    font-size: 12px;
+}
+ .three-desc-content{
+    color: #333;
+    font-size: 12px;
+ }
+
+.comment-box{
+  background: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+}
+ .userInfoTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.userInfo, .videoInfo {
+  display: flex;
+  align-items: center;
+}
+
+.userInfo image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+}
+
+.userImg image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.userImg {
+  width: 60rpx;
+  display: flex;
+}
+
+.userInfo image {
+  margin-right: 20rpx;
+}
+
+.userName text {
+  font-size: 13px;
+}
+
+.date {
+  margin-top: -14rpx;
+}
+
+.date text {
+  font-size: 12px;
+  color: #6c6c6c;
+}
+
+.VideoImgWH {
+  width: 30rpx;
+  height: 30rpx;
+}
+.commentCon {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.fixed-bottom-box{
+  padding: 10px;
+  position: fixed;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+.fixed-bottom-kind1{
+  width:40px;
+  text-align: center;
+  float: left;
+}
+.fixed-bottom-kind1 image{
+  width: 16px;
+  height: 16px;
+}
+.fixed-bottom-kind1-text{
+  font-size: 12px;
+}
+.fixed-bottom-btn{
+  background: #f2f2f2;
+  border-radius: 15px;
+  color:#f2f2f2;
+  text-align: center;
+  padding: 0 10px;
+  height: 32px;
+  margin-right: 10px;
+  float: left;
+  font-size:11px;
+}
+.fixed-bottom-btn.bottom-btn1{
+  line-height: 32px;
+}
+.fixed-bottom-btn.bgcolor1{
+  background: #3399ff;
+}
+.fixed-bottom-btn.bgcolor2{
+  background: #ff9966;
+}
+.fixed-bottom-btn.bgcolor3{
+  background: #99cc33;
+}
+.fixed-bottom-btn-text{
+  height: 16px;
+  line-height: 16px;
+
+}

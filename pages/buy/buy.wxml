@@ -1,0 +1,19 @@
+<!--pages/buy/buy.wxml-->
+<view data-v-abfcd3c8="" class="cu-steps">
+  <view data-v-abfcd3c8="" class="cu-item text-blue">
+    <view data-v-abfcd3c8="" data-index="1" class="num">
+      <view class="span"></view>
+    </view>开始</view>
+  <view data-v-abfcd3c8="" class="cu-item">
+    <view data-v-abfcd3c8="" data-index="2" class="num">
+      <view class="span"></view>
+    </view>等待</view>
+  <view data-v-abfcd3c8="" class="cu-item">
+    <view data-v-abfcd3c8="" data-index="3" class="num err">
+      <view class="span"></view>
+    </view>错误</view>
+  <view data-v-abfcd3c8="" class="cu-item">
+    <view data-v-abfcd3c8="" data-index="4" class="num">
+      <view class="span"></view>
+    </view>完成</view>
+</view>

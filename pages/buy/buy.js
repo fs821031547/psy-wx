@@ -1,12 +1,11 @@
-// pages/consultantDetail/consultantDetail.js
-const util = require('../../utils/util.js')
+// pages/buy/buy.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isShowDetailInfo: false
+
   },
 
   /**
@@ -63,13 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  showDetailInfo:function(){
-    this.setData({
-      isShowDetailInfo: !this.data.isShowDetailInfo
-    })
-  },
-  goBuy:function(){
-    util.go('buy')
   }
 })

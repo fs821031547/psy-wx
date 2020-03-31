@@ -113,54 +113,6 @@ swiper {
     color: #313131;
     background-color: #d5d6db;
 }
-/**标题*/
-.public-title{
-  padding: 10px 0;
-}
-.public-title .li-nth-1 span,
-        .public-title .li-nth .icon.icon-shaixuan {
-            vertical-align: middle;
-        }
-
-        .public-title .li-nth-1 {
-            font-size: 13px;
-            color: #999;
-            float: right;
-            line-height: 24px;
-        }
-
-        .public-title .li-nth .detailBtn {
-            min-height: 10px;
-            height: 10px;
-            line-height: 10px;
-            font-size: 12px;
-            margin: 0;
-            padding: 0;
-            color: #666666;
-            width: 8px;
-            display: inline-block;
-
-        }
-
-        .public-title .li-nth .button.button-clear {
-            color: #666666;
-        }
-
-        .public-title .li-nth .button:before {
-            font-size: 16px;
-            color: #666666;
-            min-height: 20px;
-            line-height: 20px;
-            margin: 0;
-            padding: 0;
-            margin-left: 2px;
-            
-        }
-
-        .public-title .li-nth-2 {
-            font-size: 18px;
-            font-weight: 600;
-        }
 
 .integral-platform {
   height: 45px;

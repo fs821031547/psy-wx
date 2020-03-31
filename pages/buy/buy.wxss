@@ -1,0 +1,59 @@
+/* pages/buy/buy.wxss */
+.cu-steps {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    box-sizing: border-box;
+}
+.cu-steps .cu-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    min-width: 55px;
+}
+.cu-steps .cu-item .num {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    line-height: 22px;
+    margin: 11px auto;
+    font-size: 13px;
+    border: 1px solid #0081ff;
+    position: relative;
+    overflow: hidden;
+}
+.cu-steps .cu-item .num::before, .cu-steps .cu-item .num::after {
+    content: '1';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transform: translateY(0px);
+    transform: translateY(-22px);
+    color: #ffffff;
+}
+.cu-steps .cu-item[class*="text-"] .num::after {
+    content: "\E645";
+    font-family: 'cuIcon';
+    color: #ffffff;
+    -webkit-transform: translateY(0px);
+    transform: translateY(22px);
+    transition: all 0.3s ease-in-out 0s;
+}
+.cu-steps .cu-item::before, .cu-steps .cu-item::after, .cu-steps.steps-arrow .cu-item::before, .cu-steps.steps-arrow .cu-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0px;
+    width: calc(100% - 44px);
+    border-bottom: 1px solid #ccc;
+    left: calc(0px - (100% - 44px) / 2);
+    top: 22px;
+    z-index: 0;
+}
