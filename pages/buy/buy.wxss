@@ -46,7 +46,10 @@
     transform: translateY(22px);
     transition: all 0.3s ease-in-out 0s;
 }
-.cu-steps .cu-item::before, .cu-steps .cu-item::after, .cu-steps.steps-arrow .cu-item::before, .cu-steps.steps-arrow .cu-item::after {
+.cu-steps .cu-item:nth-of-type(1)::before, .cu-steps .cu-item:nth-of-type(1)::after {
+  display: none;
+}
+.cu-steps .cu-item::before, .cu-steps .cu-item::after {
     content: "";
     display: block;
     position: absolute;
@@ -56,4 +59,105 @@
     left: calc(0px - (100% - 44px) / 2);
     top: 22px;
     z-index: 0;
+}
+.page-buy-box{
+  padding: 10px;
+  background: #f2f2f2;
+}
+.buy-info-box{
+  border:1px solid #ddd;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+
+}
+.buy-info-item{
+  display: flex;
+  padding: 10px 0;
+}
+.buy-info-name{
+  text-align: left;
+  flex: 1;
+  font-size: 13px;
+}
+.buy-info-content{
+  text-align: right;
+  flex: 1;
+  font-size: 13px;
+}
+.buy-info-image{
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 5px;
+  border:1px solid #ddd;
+}
+.buy-info-end{
+  text-align: right;
+  margin-top:15px;
+}
+.buy-info-end-tag1,.buy-info-end-tag2{
+  margin-left:10px;
+  display: inline-block; 
+  font-size: 12px;
+}
+.buy-bottom-box{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+.buy-bottom-head{
+  border-bottom: 1px solid #ddd;
+  padding: 0 10px;
+}
+.buy-bottom-head-content{
+  font-size: 12px;
+  line-height: 24px;
+}
+.buy-bottom-head-agree{
+  color: #0081ff;
+  display: inline;
+  line-height: 24px;
+
+}
+.buy-bottom-body{
+  padding: 6px 10px;
+  display: flex;
+}
+.buy-bottom-body-left{
+  flex:1;
+  color: #FF9900;
+  font-size: 14px;
+}
+.buy-bottom-body-right{
+  float: right;
+  background: #ff9966;
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 14px;
+}
+.buy-tip-box{
+  margin-top:50px;  
+}
+.buy-tip-title{
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+}
+.buy-tip-desc{
+  line-height: 20px;
+  font-size: 13px;
+  color: #666;
+}
+.buy-tip-image{
+  width:120px;
+  height: 90px;
+  margin: 0 auto;
 }

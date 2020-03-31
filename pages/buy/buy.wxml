@@ -3,17 +3,74 @@
   <view data-v-abfcd3c8="" class="cu-item text-blue">
     <view data-v-abfcd3c8="" data-index="1" class="num">
       <view class="span"></view>
-    </view>开始</view>
+    </view>成功付款</view>
   <view data-v-abfcd3c8="" class="cu-item">
     <view data-v-abfcd3c8="" data-index="2" class="num">
       <view class="span"></view>
-    </view>等待</view>
+    </view>调查填写</view>
   <view data-v-abfcd3c8="" class="cu-item">
     <view data-v-abfcd3c8="" data-index="3" class="num err">
       <view class="span"></view>
-    </view>错误</view>
-  <view data-v-abfcd3c8="" class="cu-item">
-    <view data-v-abfcd3c8="" data-index="4" class="num">
-      <view class="span"></view>
-    </view>完成</view>
+    </view>开始咨询
+  </view>
+
+</view>
+<view class="page-buy-box">
+  <view class="common-title">
+    服务信息
+  </view>
+  <view class="buy-info-box">
+    <view class="buy-info-item">
+      <view class="buy-info-name">
+        咨询老师
+      </view>
+      <view class="buy-info-content">
+        <image class="buy-info-image" src=""></image>
+        徐勇
+      </view>
+    </view>
+    <view class="buy-info-item">
+      <view class="buy-info-name">
+        咨询方式
+      </view>
+      <view class="buy-info-content">
+        文字咨询
+      </view>
+    </view>
+    <view class="buy-info-item" style="border-bottom:1px solid #ddd">
+      <view class="buy-info-name">
+        咨询次数
+      </view>
+      <view class="buy-info-content">
+        1
+      </view>
+    </view>
+    <view class="buy-info-end">
+      <view class="buy-info-end-tag1">小计</view>
+      <view class="buy-info-end-tag2">200</view>
+    </view>
+    
+  </view>
+  <!-- 付款成功 -->
+  <view class="buy-tip-box">
+    <view class="buy-tip-title">
+    付款成功
+    </view>
+    <view class="buy-tip-desc">
+    您好！咨询师需要了解您的基本信息，请认真填写以下调查表信息，以便咨询师能更好的了解您。
+    </view>
+    <image class="buy-tip-image"></image>
+  </view>
+</view>
+<!-- 去支付 -->
+<view class="buy-bottom-box">
+  <view class="buy-bottom-head">
+    <view class="buy-bottom-head-content">
+      同意 <view class="buy-bottom-head-agree">《心理咨询预约协议》</view> 与 <view class="buy-bottom-head-agree">知情通知书</view> 
+    </view>
+  </view>
+  <view class="buy-bottom-body">
+    <view class="buy-bottom-body-left">总计 ￥200</view>
+    <view class="buy-bottom-body-right">去支付</view>
+  </view>
 </view>
